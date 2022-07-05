@@ -1,0 +1,7 @@
+{
+    "@@locale": "my",
+    "counterAppBarTitle": "ကောင်တာ",
+    "@counterAppBarTitle": {
+        "description": "ကောင်တာ ဖြစ်ပါသည်"
+    }
+}
