@@ -10,14 +10,13 @@ class LocaleCubit extends Cubit<Locale> {
   LocaleCubit()
       : super(
           AppLocalizations.supportedLocales
-              .where((e) => e.languageCode == Prefer.localePref)
-              .first,
+              .firstWhere((e) => e.languageCode == Prefer.localePref),
         );
 
   Future<void> changeLocale(
     AppLocale appLocale,
   ) async {
-    final locale = appLocaleData[appLocale]!;
+    final locale = Locale.fromSubtags(languageCode: appLocale.name);
     emit(locale);
 
     Prefer.prefs = await SharedPreferences.getInstance();

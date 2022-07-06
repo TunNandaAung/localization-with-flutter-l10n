@@ -76,7 +76,7 @@ class CounterText extends StatelessWidget {
 }
 
 class LocaleButton extends StatelessWidget {
-  const LocaleButton({Key? key}) : super(key: key);
+  const LocaleButton({super.key});
 
   @override
   Widget build(BuildContext context) {
