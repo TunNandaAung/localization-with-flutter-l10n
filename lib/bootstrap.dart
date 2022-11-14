@@ -33,7 +33,7 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
   WidgetsFlutterBinding.ensureInitialized();
 
   Prefer.prefs = await SharedPreferences.getInstance();
-  final defaultLocale = kIsWeb ? 'en' : Platform.localeName;
+  final defaultLocale = kIsWeb ? 'en' : Platform.localeName.split('_').first;
   Prefer.localePref = Prefer.prefs!.getString('locale') ?? defaultLocale;
 
   FlutterError.onError = (details) {
