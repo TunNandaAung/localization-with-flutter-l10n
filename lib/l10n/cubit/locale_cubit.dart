@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:l10n_with_flutter_l10n/l10n/app_locale.dart';
-import 'package:l10n_with_flutter_l10n/l10n/l10n.dart';
+import 'package:l10n_with_flutter_l10n/l10n/arb/app_localizations.dart';
 import 'package:l10n_with_flutter_l10n/preferences/preferences.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

@@ -88,7 +88,7 @@ class LocaleButton extends StatelessWidget {
             context.read<LocaleCubit>().changeLocale(AppLocale.en);
           },
           style: TextButton.styleFrom(
-            backgroundColor: Colors.black.withOpacity(.80),
+            backgroundColor: Colors.black.withValues(alpha: .80),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(50),
             ),
@@ -109,7 +109,7 @@ class LocaleButton extends StatelessWidget {
             context.read<LocaleCubit>().changeLocale(AppLocale.es);
           },
           style: TextButton.styleFrom(
-            backgroundColor: Colors.black.withOpacity(.80),
+            backgroundColor: Colors.black.withValues(alpha: .80),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(50),
             ),
@@ -130,7 +130,7 @@ class LocaleButton extends StatelessWidget {
             context.read<LocaleCubit>().changeLocale(AppLocale.my);
           },
           style: TextButton.styleFrom(
-            backgroundColor: Colors.black.withOpacity(.80),
+            backgroundColor: Colors.black.withValues(alpha: .80),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(50),
             ),

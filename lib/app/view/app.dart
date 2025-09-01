@@ -9,8 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:l10n_with_flutter_l10n/counter/counter.dart';
+import 'package:l10n_with_flutter_l10n/l10n/arb/app_localizations.dart';
 import 'package:l10n_with_flutter_l10n/l10n/cubit/locale_cubit.dart';
-import 'package:l10n_with_flutter_l10n/l10n/l10n.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -28,7 +28,7 @@ class App extends StatelessWidget {
       builder: (context, locale) {
         return MaterialApp(
           theme: ThemeData(
-            appBarTheme: const AppBarTheme(color: Color(0xFF13B9FF)),
+            appBarTheme: const AppBarTheme(backgroundColor: Color(0xFF13B9FF)),
             colorScheme: ColorScheme.fromSwatch(
               accentColor: const Color(0xFF13B9FF),
             ),
